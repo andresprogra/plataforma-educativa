@@ -1,0 +1,9 @@
+<% if user_signed_in? %>
+	<section class="new_article">
+		<h1>Crear nuevo articulo.</h1>
+		<%= render "form" %>
+	</section>
+<%else%>
+	<p>Hola</p>	
+	 <!--<% flash[:notice] = "Debes iniciar sesión primero" %>-->
+<%end%>

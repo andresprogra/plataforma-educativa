@@ -1,0 +1,15 @@
+<section id="banner" class="middle-xs row" style="margin:0px !important;">
+	<div class="image" style="display:flex;">
+		<!--<%= image_tag "area_cbta.jpg", :class => "images-banner", :alt => "Google +", :title => "Google +"%>-->
+		<h1 class="col-md-6 col-xs-12 texto-banner">CENTRO DE BACHILLERATO TECNOLÓGICO agropecuario 112</h1>
+		<iframe class="video-promo col-md-6 col-xs-12" src="https://www.youtube.com/embed/a36V7YWYqfk?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+	</div>
+</section>
+<div class="">
+		<div class="col-xs-12 col-md-12" style="background:white;margin-bottom:20px;padding:20px;">
+			<h1><%= @articles.title %></h1>
+			<% unless @articles.user.nil? %>
+				<p>Escrito por: <%= @articles.user.email%></p>	
+			<%end%>
+		</div>
+</div>

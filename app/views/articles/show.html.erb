@@ -1,0 +1,14 @@
+<section class="container">
+	<h1><%= @article.title %></h1>
+	<% unless @article.user.nil? %>
+	<p>Escrito por: <%= @article.user.email%></p>	
+	<p>Visitas: <%= @article.visits_count%></p>	
+	<%end%>
+	
+	<p><%= link_to "Editar", edit_article_path(@article) %></p>
+	<div>
+		<%= @article.body %>
+		
+
+	</div>
+</section>

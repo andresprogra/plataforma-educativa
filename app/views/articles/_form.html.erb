@@ -1,0 +1,17 @@
+<%= form_for(@article) do |f| %>
+	<% @article.errors.full_messages.each do |message| %>
+		<div class="be-red white">
+			 <%= message %>
+		</div>
+	<%end%>
+		<div class="filed">
+			<%= f.text_field :title, placeholder: "Titulo del articulo", class:"form-control" %>
+		</div>
+		<div class="field">
+			<%= f.text_area :body, placeholder: "Escribe el cuerpo del articulo.", style:"height:250px", class:"form-control" %>
+		</div>
+		<div class="field end-xs">
+			<%= f.submit "Publicar", class:"btn btn-green", style: "font-size:1.2em;" %>
+		</div>
+
+<%end%>

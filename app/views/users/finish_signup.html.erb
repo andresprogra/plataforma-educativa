@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="form_new col-xs-10 col-xs-offset-1">
+    <h2>Confirma tu Email</h2>
+ 
+    <%= form_for(current_user, as: 'user', url: finish_signup_path(current_user)) do |f| %>
+      <% if @show_errors && current_user.errors.any? %>
+        <h2>Errores encontrados:</h2>
+        <ul>
+          <% current_user.errors.full_messages.each do |msg| %>
+            <li><%= msg %></li>
+          <% end %>
+        </ul>
+      <% end %>
+     
+      <div class="field">
+        <%= f.label :email, "Correo electrónico." %>
+        <%= f.text_field :email, autofocus: true, value: '', placeholder: 'Ejemplo: email@me.com',class: "form-control" %>
+      </div>
+     
+      <div>
+        <%= f.submit 'Confirmar', class: "btn btn-green" %>
+      </div>
+     </div>
+   </div>

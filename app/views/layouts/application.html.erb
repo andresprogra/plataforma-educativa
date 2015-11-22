@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Centro de Bachillerato Tecnologico agropecuario 112</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300italic,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '1657214051229555',
+      xfbml      : true,
+      version    : 'v2.5'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+</head>
+<body class="gris">
+	<div
+  class="fb-like"
+  data-share="true"
+  data-width="450"
+  data-show-faces="true">
+</div>
+	<p class="notice bg-info"><%= notice %> <span class="float-der glyphicon glyphicon-remove"></span> </p>
+	<p class="alert bg-danger "><%= alert %> <span class="float-der glyphicon glyphicon-remove"></span> </p>		
+	<%= render "partials/navegacion" %>
+	<%= yield %>
+	<footer class="col-xs-12">
+		<section class="container">
+			<p><span class="ion-chatboxes"></span>Km. 15 Carr. Casas Grandes - Janos.</p>
+			<p>Casas Grandes, Chihuahua</p>
+		</section>
+	</footer>
+</body>
+</html>

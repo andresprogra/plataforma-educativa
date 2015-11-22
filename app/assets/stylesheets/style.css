@@ -1,0 +1,264 @@
+html,body{
+	margin:0px;
+	font-family: 'Lato', sans-serif !important;
+}
+
+.gris{
+	background-color: #EAEAEA;
+	padding-bottom: 1rem;
+}
+.red{
+	color:red;
+}
+.glyphicon-remove{
+	cursor: pointer;
+}
+.articulo{
+	background: white;
+	/*width: 80%;
+	margin: 50px auto;*/
+	margin:20px 26px;
+	max-width: 45%;
+	border-radius: 10px;
+	padding: 20px;
+}
+.float-der{
+	float: right;
+}
+.be-light{
+	background: #8bc34a;
+}
+.white{
+	color:#F1F8E9;
+}
+#menu nav ul{
+	margin-bottom: 0;
+	font-size: 1.3em;
+}
+.large-padding{
+	padding: 10px 0px;
+}
+.right{
+	text-align: right;
+}
+#menu nav ul li{
+	list-style-type: none;
+	font-size: 
+	
+}
+
+.notice,.alert{
+	padding: 10px !important;
+	border-radius: none !important;
+	margin:0 !important;
+	color:black;
+}
+.notice:empty{
+	display:none;
+}
+.alert:empty{
+	display: none;
+}
+.notice{
+	background: #5CB85C !important;
+}
+.alert{
+	background: #D9534F !important;
+}
+#menu nav ul li a{
+	text-decoration: none;	
+}
+#menu nav ul li a:visited{
+	text-decoration: none !important;
+	color: #F1F8E9;
+}
+#menu nav ul li .btn-login{
+	-moz-appearance: none;
+	-moz-user-select: none;
+	/*background-color: #D3D3D3;*/
+	/*float: right;*/
+	/*margin: 8px 0px 0px;*/
+	background-color: #FF4842;
+	border-radius: 0.4em;
+	border: medium none;
+	box-shadow: 0px -0.2em rgba(0, 0, 0, 0.3) inset;
+	box-sizing: border-box;
+	color: #FFF;
+	cursor: pointer;
+	cursor: pointer;
+	display: inline-block;
+	font-family: Lato,sans-serif;
+	font-size: 0.95em;
+	font-weight: 700;
+	overflow: hidden;
+	padding: 0.6em 0.8em 0.8em;
+	position: relative;
+	text-decoration: none;
+	text-overflow: ellipsis;
+	transition: all 0.2s ease 0s;
+	vertical-align: middle;
+	white-space: nowrap;
+
+}
+.login-a{
+	text-decoration: none;
+}
+#title-menu{
+	margin:0px;
+	font-weight: 700;
+	font-size: 1.5em;
+}
+.login{
+	background: #689f38;
+	height: 100%;
+	margin:0;
+	padding-bottom: 5px;
+	padding-right:35px;
+	padding-top:5px;
+	text-align: right;
+}
+.images-banner{
+	width: 100%;
+	position: absolute;
+
+}
+.image{
+	background-image: url("/assets/area_cbta.jpg");
+	background-position: 70%;
+	padding: 20px 100px;
+
+}
+.texto-banner{
+	color: white;
+	font-size: 3em;
+	margin: 0px;
+	/*padding: 15vh 3vh;*/
+	position: relative;
+	text-shadow: 6px 6px 8px black;
+	
+}
+.middle-xs{
+	-webkit-align-items: center;
+ 	-ms-flex-align: center;
+ 	-webkit-box-align: center;
+}
+.video-promo{
+
+	position: relative;
+	margin: 0;
+	min-height: 264px !important;
+	/*max-width: 381px;
+	max-height: 214px;*/
+	
+}
+
+footer{
+	background: #33691e;
+	color:white;
+	
+	padding: 8px;
+}
+footer p{
+	margin:0;
+}
+.center{
+	text-align: center;
+}
+footer p a{
+	text-decoration: none;
+}
+
+.field,.actions{
+	margin: 1em 0;
+}
+.form-control{
+	border:none;
+	border-bottom: 1px solid;
+	outline: none;
+	width: 100%;
+	display: block;
+	padding: 10px 0px;
+	font-size: 1.2em;
+}
+.form_new{
+	background-color: white;
+	border-radius: 10px;
+	margin: 60px 0;
+	padding: 15px;
+}
+section.new_article{
+	width: 80%;
+	margin:0 auto;
+}
+
+.btn{
+	-moz-appearance: none;
+	-moz-user-select: none;
+	/*float: right;*/
+	/*margin: 8px 0px 0px;*/
+	background-color: #D3D3D3;
+	border-radius: 0.4em;
+	border: medium none;
+	box-shadow: 0px -0.2em rgba(0, 0, 0, 0.3) inset;
+	box-sizing: border-box;
+	color: #FFF;
+	cursor: pointer;
+	cursor: pointer;
+	display: inline-block;
+	font-family: Lato,sans-serif;
+	font-size: 0.95em;
+	font-weight: 700;
+	overflow: hidden;
+	padding: 0.6em 0.8em 0.8em;
+	position: relative;
+	text-decoration: none;
+	text-overflow: ellipsis;
+	transition: all 0.2s ease 0s;
+	vertical-align: middle;
+	white-space: nowrap;
+}
+.btn-red{
+	background-color: #FF4842;
+}
+.btn-green{
+	background-color: #4caf50;
+}
+.btn-green50{
+	background-color:#f1f8e9;
+}
+.btn-green100{
+	background-color:#dcedc8;
+}
+.btn-green200{
+	background-color:#c5e1a5;
+}
+.btn-green300{
+	background-color:#aed581;
+}
+.btn-green400{
+	background-color:#9ccc65;
+}
+.btn-green500{
+	background-color:#8bc34a;
+}
+.btn-green600{
+	background-color:#7cb342;
+}
+.btn-green700{
+	background-color:#689f38;
+}
+.btn-green800{
+	background-color: #558b2f;
+}
+
+.btn-green900{
+	background-color:#33691e;
+}
+
+.be-red{
+	background-color: #F44336;
+	padding: 1em;
+}
+.white{
+	color:white;
+}

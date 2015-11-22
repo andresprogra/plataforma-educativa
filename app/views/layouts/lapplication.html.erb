@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Centro de Bachillerato Tecnologico agropecuario 112</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300italic,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+  <link rel="stylesheet" href="http://code.ionicframework.com/1.1.1/css/ionic.css">
+</head>
+<body class="gris">
+	<%= render "partials/navegacion" %>
+	<!--<% if flash[:notice].nil? %>
+	<p class="notice bg-info"><%= notice %></p>
+	<%end%>
+	<% if flash[:alert] %>
+	<p class="alert bg-danger "><%= alert %></p>-->
+	<%= yield %>
+	<footer class="col-xs-12">
+		<section class="container">
+			<p>Km. 15 Carr. Casas Grandes - Janos.</p>
+			<p>Casas Grandes, Chihuahua</p>
+		</section>
+	</footer>
+</body>
+</html>
